@@ -199,7 +199,7 @@ void sendDataToServer(int deviceId) {
 
 
 
-  mySerial.write("AT+HTTPPARA=\"URL\",\"http://devicetracker.000webhostapp.com/devicetrackerapis/upload.php?deviceid=");
+  mySerial.write("AT+HTTPPARA=\"URL\",\"http://yourdomain.com/apis/upload.php?deviceid=");
   mySerial.print(deviceId);
   mySerial.write("&lat=");
   mySerial.print(latitude,9);
